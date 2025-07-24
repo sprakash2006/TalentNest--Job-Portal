@@ -61,7 +61,56 @@ const LandingPage = () => {
       </section>
 
 
+      <section>
+        <div className="flex flex-col justify-center items-center px-[15vw] py-[13vw] gap-[2vw] bg-[#0C2340]">
+          <div className="flex flex-row justify-center items-center gap-[2vw]">
+              {feature
+                  .filter(feature => feature.id % 2 !== 0)
+                  .map(({id,title,content})=> {
+                    return(
+                      <Card className="w-[33vw] h-[12vw] gap-3 bg-[rgb(7,15,24)] border-none" key={id}>
+                          <CardHeader>
+                              <CardTitle className="text-[21px]">{title}</CardTitle>
+                          </CardHeader>
+                          <CardContent>
+                              <p className="text-[13px]">{content}</p>
+                          </CardContent>
+                      </Card>
+                    );
+                  })}
+          </div>
+          <div className="flex flex-row justify-center items-center gap-[2vw]">
+              {feature
+                  .filter(feature => feature.id % 2 === 0)
+                  .map(({id,title,content})=> {
+                    return(
+                      <Card className="w-[33vw] h-[12vw] gap-3 bg-[rgb(7,15,24)] border-none" key={id}>
+                          <CardHeader>
+                              <CardTitle className="text-[21px]">{title}</CardTitle>
+                          </CardHeader>
+                          <CardContent>
+                              <p className="text-[13px]">{content}</p>
+                          </CardContent>
+                      </Card>
+                    );
+                  })}
+          </div>
+        </div>
+      </section>
 
+
+
+      <section className="bg-[#000000] px-[19vw] pt-[9vw] pb-[15vw]">
+        <h1 className="font-serif text-center font-bold text-7xl pb-[6vw]">FAQ's</h1>
+        <Accordion type="single" collapsible className="w-[60vw]" defaultValue={faqs[0]?.id}>
+          {faqs.map(({question, answer, id}) => (
+            <AccordionItem key={id} value={id}>
+              <AccordionTrigger className="hover:no-underline cursor-pointer px-5 text-[1em]">{question}</AccordionTrigger>
+              <AccordionContent className="pl-8 text-[0.9em]">{answer}</AccordionContent>
+            </AccordionItem>
+          ))}
+        </Accordion>
+      </section>
       
 
     </div>
