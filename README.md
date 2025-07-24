@@ -1,7 +1,7 @@
-💼 Talent Nest – Job Hiring Platform
+# 💼 Talent Nest – Job Hiring Platform
 Talent Nest is a modern, full-featured job hiring platform designed to streamline the recruitment process for companies and job seekers alike. Built with scalability, responsiveness, and real-world usability in mind, Talent Nest offers an intuitive interface and powerful backend to match talent with opportunity effectively.
 
-🚀 Features :
+## 🚀 Features :
 
 🧑‍💼 For Employers:
 Post job listings
@@ -25,7 +25,7 @@ Role-based access control for Admins, Employers, and Candidates
 🔍 Advanced Search & Filters
 Filter jobs by role, location, experience, and more
 
-🛠️ Tech Stack
+## 🛠️ Tech Stack
 Frontend: React, Tailwind CSS
 Backend: Node.js, Express.js
 Database: Supabase
