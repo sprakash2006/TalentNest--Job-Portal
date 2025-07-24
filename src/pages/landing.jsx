@@ -4,6 +4,15 @@ import {
   CarouselContent,
   CarouselItem,
 } from "@/components/ui/carousel";
+import {
+  Card,
+  CardAction,
+  CardContent,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
 import companies from "../data/companies.json";
 import Autoplay from 'embla-carousel-autoplay';
 
@@ -36,6 +45,47 @@ const LandingPage = () => {
             })}
           </CarouselContent>
         </Carousel>
+      </section>
+
+      <section>
+        <div className="flex flex-col justify-center items-center mt-[10vw] gap-[2vw]">
+          <div className="flex flex-row justify-center items-center gap-[2vw]">
+              <Card className="w-[33vw] h-[12vw] gap-3">
+                <CardHeader>
+                  <CardTitle className="text-[21px]">🤖 AI-Powered Candidate Matching</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-[13px]">Our intelligent algorithm evaluates candidates not just on keywords, but also on their experience, soft skills, and cultural compatibility with your organization. This ensures you spend less time screening and more time engaging with the right people—those who are most likely to thrive in your team and role.</p>
+                </CardContent>
+              </Card>
+              <Card className="w-[33vw] h-[12vw] gap-3">
+                <CardHeader>
+                  <CardTitle className="text-[21px]">⚙️ End-to-End Hiring Automation</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-[13px]">From the moment a job is posted to the final offer letter, automate repetitive tasks like resume screening, interview scheduling, and candidate tracking. Our platform streamlines the entire hiring process, reducing manual work and letting your team focus on building meaningful connections with top talent.</p>
+                </CardContent>
+              </Card>
+          </div>
+          <div className="flex flex-row justify-center items-center gap-[2vw]">
+              <Card className="w-[33vw] h-[12vw] gap-3">
+                <CardHeader>
+                  <CardTitle className="text-[21px]">🌐 Post Jobs Everywhere, Instantly</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-[13px]">Maximize your reach with one-click job posting to major job boards, your company’s careers page, and social media platforms like LinkedIn, Facebook, and Twitter. This unified system helps attract diverse candidates faster, saving time and effort across the board.</p>
+                </CardContent>
+              </Card>
+              <Card className="w-[33vw] h-[12vw] gap-3">
+                <CardHeader>
+                  <CardTitle className="text-[21px]">📊 Real-Time Hiring Insights</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-[13px]">Get a clear, visual understanding of your recruitment pipeline. Analyze candidate flow, identify bottlenecks, track engagement metrics, and make smarter hiring decisions backed by real-time data. Our analytics dashboard gives you full control and transparency at every stage.</p>
+                </CardContent>
+              </Card>
+          </div>
+        </div>
       </section>
 
     </div>
