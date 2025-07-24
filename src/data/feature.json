@@ -1,0 +1,23 @@
+[
+    {
+        "title":"🤖 AI-Powered Candidate Matching",
+        "content":"Our intelligent algorithm evaluates candidates not just on keywords, but also on their experience, soft skills, and cultural compatibility with your organization. This ensures you spend less time screening and more time engaging with the right people—those who are most likely to thrive in your team and role.",
+        "id":"1"
+    },
+    {
+        "title":"⚙️ End-to-End Hiring Automation",
+        "content":"From the moment a job is posted to the final offer letter, automate repetitive tasks like resume screening, interview scheduling, and candidate tracking. Our platform streamlines the entire hiring process, reducing manual work and letting your team focus on building meaningful connections with top talent.",
+        "id":"2"
+    },
+    {
+        "title":"🌐 Post Jobs Everywhere, Instantly",
+        "content":"Maximize your reach with one-click job posting to major job boards, your company’s careers page, and social media platforms like LinkedIn, Facebook, and Twitter. This unified system helps attract diverse candidates faster, saving time and effort across the board.",
+        "id":"3"
+    },
+    {
+        "title":"📊 Real-Time Hiring Insights",
+        "content":"Get a clear, visual understanding of your recruitment pipeline. Analyze candidate flow, identify bottlenecks, track engagement metrics, and make smarter hiring decisions backed by real-time data. Our analytics dashboard gives you full control and transparency at every stage.",
+        "id":"4"
+    }
+    
+]

@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "question": "1. What is TalentNest and how does it help me hire faster?",
+    "answer": "TalentNest is a modern job hiring platform that simplifies and automates your entire recruitment process. From posting jobs and screening candidates to scheduling interviews and making offers—everything is streamlined in one place to save you time and effort."
+  },
+  {
+    "id": 2,
+    "question": "2. Can I post jobs to multiple platforms at once?",
+    "answer": "Yes! With just one click, you can distribute your job openings across multiple top job boards, social media platforms, and your company’s career page—maximizing your reach and attracting more qualified candidates."
+  },
+  {
+    "id": 3,
+    "question": "3. How does your AI-powered matching system work?",
+    "answer": "Our AI analyzes each candidate's skills, experience, and cultural fit to automatically rank applicants for every job. This helps you identify the best matches faster and reduces the time spent reviewing irrelevant applications."
+  },
+  {
+    "id": 4,
+    "question": "4. Is it suitable for startups or small businesses?",
+    "answer": "Absolutely! Whether you're a growing startup or an established company, our platform is designed to scale with your needs. You can manage hiring across multiple roles, teams, or locations—all with simple tools and powerful automation."
+  },
+  {
+    "id": 5,
+    "question": "5. Can I customize the hiring workflow?",
+    "answer": "Yes, our platform offers full customization. You can define stages like resume review, phone screening, technical interviews, and more. Set automated triggers, emails, and reminders to fit your unique hiring process."
+  },
+  {
+    "id": 6,
+    "question": "6. Does the platform support interview scheduling?",
+    "answer": "Yes! Our system allows candidates to book interviews based on your team’s availability. You can integrate with Google Calendar or Outlook and send automated reminders to reduce no-shows."
+  },
+  {
+    "id": 7,
+    "question": "7. Do I need technical skills to use this platform?",
+    "answer": "Not at all. The platform is designed with simplicity in mind. Whether you're an HR professional or a founder, you can easily navigate and manage hiring without any technical knowledge."
+  },
+  {
+    "id": 8,
+    "question": "8. Is my company’s data safe on your platform?",
+    "answer": "Security is a top priority. All your data is encrypted and stored securely using industry-standard protocols. We comply with GDPR and other data protection laws to ensure your information—and your candidates'—is safe."
+  }
+]
