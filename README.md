@@ -1,3 +1,40 @@
+💼 Talent Nest – Job Hiring Platform
+Talent Nest is a modern, full-featured job hiring platform designed to streamline the recruitment process for companies and job seekers alike. Built with scalability, responsiveness, and real-world usability in mind, Talent Nest offers an intuitive interface and powerful backend to match talent with opportunity effectively.
+
+🚀 Features :
+
+🧑‍💼 For Employers:
+Post job listings
+Manage applications
+Shortlist and communicate with candidates
+
+👨‍💻 For Job Seekers:
+Create professional profiles
+Browse and apply to job listings
+Track application status
+
+📊 Admin Dashboard:
+Monitor users, jobs, and platform metrics
+Manage categories and content
+Ensure platform compliance and security
+
+🔒 Authentication & Authorization
+Secure login/signup
+Role-based access control for Admins, Employers, and Candidates
+
+🔍 Advanced Search & Filters
+Filter jobs by role, location, experience, and more
+
+🛠️ Tech Stack
+Frontend: React, Tailwind CSS
+Backend: Node.js, Express.js
+Database: Supabase
+Authentication:Clerk
+APIs: RESTful APIs
+Hosting: Vercel
+
+
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
