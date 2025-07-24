@@ -26,12 +26,12 @@ Talent Nest is a modern, full-featured job hiring platform designed to streamlin
 - Filter jobs by role, location, experience, and more
 
 ## 🛠️ Tech Stack
-- Frontend: React, Tailwind CSS
-- Backend: Node.js, Express.js
-- Database: Supabase
-- Authentication:Clerk
-- APIs: RESTful APIs
-- Hosting: Vercel
+1. Frontend: React, Tailwind CSS
+2. Backend: Node.js, Express.js
+3. Database: Supabase
+4. Authentication:Clerk
+5. APIs: RESTful APIs
+6. Hosting: Vercel
 
 
 
