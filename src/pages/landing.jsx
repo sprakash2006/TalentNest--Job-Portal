@@ -39,8 +39,8 @@ const LandingPage = () => {
 
 
       <section className="flex gap-[6vw] mt-[10vw]">
-        <button className="border-2 px-15 py-4 radius rounded-[10px] hover:rounded-[50px] cursor-pointer duration-200 bg-green-700 border-none text-[20px] font-semibold">Find a Job</button>
-        <button className="border-2 px-15 py-4 radius rounded-[10px] hover:rounded-[50px] cursor-pointer duration-200 bg-purple-700 border-none text-[20px] font-semibold">Post a Job</button>
+        <button onClick={() => window.location.href = '/jobs'} className="border-2 px-15 py-4 radius rounded-[10px] hover:rounded-[50px] cursor-pointer duration-200 bg-green-700 border-none text-[20px] font-semibold">Find a Job</button>
+        <button onClick={() => window.location.href = '/post-job'} className="border-2 px-15 py-4 radius rounded-[10px] hover:rounded-[50px] cursor-pointer duration-200 bg-purple-700 border-none text-[20px] font-semibold">Post a Job</button>
       </section>
 
 
