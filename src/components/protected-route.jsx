@@ -17,11 +17,12 @@ const ProtectedRoute = ({ children }) => {
                 Loading...
         </button>
 
-    </div>);
+    </div>
+    );
   }
 
   if (!isSignedIn) {
-  return <Navigate to="redirect=/onboarding" replace />;
+  return <Navigate to="/onboarding" replace />;
 }
 
   return children;
