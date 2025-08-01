@@ -3,8 +3,9 @@ import { useUser } from "@clerk/clerk-react";
 import { Navigate, useLocation } from "react-router-dom";
 
 const ProtectedRoute = ({ children }) => {
-  const { isSignedIn, isLoaded } = useUser();
+  const { isSignedIn, isLoaded, user } = useUser();
   const location = useLocation();
+  const pathname = location.pathname;
 
   if (!isLoaded) {
     return (
@@ -23,7 +24,15 @@ const ProtectedRoute = ({ children }) => {
 
   if (!isSignedIn) {
   return <Navigate to="/onboarding" replace />;
-}
+  }
+
+  if(
+    user !== undefined &&
+    !user?.unsafeMetadata?.role && 
+    pathname !== "/onboarding"
+  )
+    return <Navigate to="/onboarding" />
+
 
   return children;
 };

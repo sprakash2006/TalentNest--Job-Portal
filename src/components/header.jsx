@@ -2,9 +2,12 @@ import React, { useState, useEffect } from 'react';
 import { Button } from "./ui/button";
 import { SignedIn, SignedOut, UserButton, SignIn } from '@clerk/clerk-react';
 import { PenBox,  BriefcaseBusiness, Heart } from 'lucide-react';
+import { Link } from 'react-router-dom';
+import { useUser } from '@clerk/clerk-react';
 
 const Header = () => {
   const [showSignIn, setShowSignIn] = useState(false);
+  const { user } = useUser();
 
   const handleOverlayClick = (e) => {
     if (e.target === e.currentTarget) {
@@ -23,23 +26,20 @@ const Header = () => {
           <SignedOut>
             <Button variant="outline" onClick={() => setShowSignIn(true)}>Login</Button>
           </SignedOut>
+
           <SignedIn>
             <div className="flex gap-3 p-1 rounded-lg">
-              <Button
-                variant="destructive"
-                className="rounded-full"
-                onClick={() => window.location.href = '/post-job'}
-              >
-                <PenBox size={20} className="mr-2" />
-                Post a Job
-              </Button>
-              <UserButton
-              appearance={{
-                elements:{
-                  avatarBox:"h-50 w-50",
-                },
-              }} 
-              >
+              {user?.unsafeMetadata?.role === "recruiter" && (
+                <Link to="/post-job">
+                <Button variant="destructive" className="rounded-full">
+                  <PenBox size={20} className="mr-2" />
+                  Post a Job
+                </Button>
+              </Link>
+              )}
+              
+
+              <UserButton appearance={{elements:{ avatarBox:"h-50 w-50" },}}>
                 <UserButton.MenuItems>
                   <UserButton.Link
                   label="my Jobs"
@@ -48,10 +48,10 @@ const Header = () => {
                   />
                   <UserButton.Link
                   label="Saved Jobs"
-                  labelIcon={< Heart size={15} />}
+         />
+                        labelIcon={< Heart size={15} />}
                   href="/saved-jobs"
-                  />
-                </UserButton.MenuItems>
+                   </UserButton.MenuItems>
               </UserButton>
             </div>
           </SignedIn>
